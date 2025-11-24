@@ -1,9 +1,18 @@
+body {
+  background-color: #e1f2fa; /* xanh nhạt, bạn muốn màu khác thì đổi */
+  margin: 0;
+}
+
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
 .navbar {
-  background-color: pink;
+  background-color: rgb(192, 230, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-style:;
+  
 }
 
 .navbar h1 {
@@ -20,7 +29,19 @@
   font-size: max(1.2vw, 12px);
 }
 
-.navbar .navbar_right p{
-    cursor: pointer;
+.navbar .navbar_right p {
+  cursor: pointer;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+}
+.about img {
+  width: 250px;
+  border-radius: 50%;
+  border: 6px solid rgb(162, 198, 250);
+}
