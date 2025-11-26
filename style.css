@@ -16,7 +16,7 @@ body {
 }
 
 .navbar h1 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 40px;
   cursor: pointer;
 }
@@ -29,17 +29,29 @@ body {
   font-size: 16px;
 }
 
-.navbar .navbar_right a {
+.navbar .navbar_right a,
+.navbar .navbar_right a:link,
+.navbar .navbar_right a:visited {
   cursor: pointer;
-  font-size: 18px;
+  text-decoration: none;
+  font-size: 14px;
   font-weight: 500;
+  color: rgb(70, 70, 70);
 }
+
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 100px;
   gap: 50px;
+}
+.about .content button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  border: none;
 }
 
 .about .about-img img {
@@ -52,9 +64,10 @@ body {
   width: max(25vw, 50px);
 }
 
-.about .content button {
-  background-color: rgb(150, 237, 255);
-  padding: 5px 15px;
-  font-size: 14px;
-  font-weight: 500;
+.about .content .social {
+  display: flex;
+  gap: 15px;
+}
+.about .content .social img {
+  width: 30px;
 }
